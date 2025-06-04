@@ -51,6 +51,50 @@
       </div>
     </div>
   </section>
+
+  <!-- Solução Section -->
+  <section id="solucao" class="bg-gray-100 py-20">
+    <div class="container mx-auto px-4 text-center">
+      <h2 class="section-heading mb-10">Nossa Solução</h2>
+      <div class="flex flex-wrap justify-center items-center">
+        <div class="w-full md:w-1/2 p-6">
+          <p class="text-lg leading-relaxed">O <strong>AlertaCheia</strong> é um sistema de monitoramento de alagamentos que utiliza sensores pluviométricos conectados via IoT para medir o volume de chuva em tempo real. A plataforma gera alertas automáticos em três níveis:</p>
+          <ul class="list-disc list-inside text-left mt-6 text-gray-700">
+            <li><span class="text-green-500 font-semibold">Seguro (Verde)</span></li>
+            <li><span class="text-yellow-500 font-semibold">Atenção (Amarelo)</span></li>
+            <li><span class="text-red-500 font-semibold">Alerta (Vermelho)</span></li>
+          </ul>
+          <p class="mt-6">Componentes técnicos incluem pluviômetros digitais, microcontroladores (ESP8266/ESP32), plataforma MQTT, banco de dados na nuvem (Firebase/AWS/Azure), e um dashboard web/mobile com notificações push, e-mails e WhatsApp.</p>
+        </div>
+        <div class="w-full md:w-1/2 p-6">
+          <div class="slideshow">
+            <div class="slide active">
+              <img src="./assets/solucao1.jpg" alt="Sensor in Flooded Area">
+            </div>
+            <div class="slide">
+              <img src="./assets/solucao2.jpg" alt="Dashboard with Real-Time Alerts">
+            </div>
+            <button class="slideshow-btn prev" onclick="changeSlide(-1)">❮</button>
+            <button class="slideshow-btn next" onclick="changeSlide(1)">❯</button>
+          </div>
+          <script>
+            let slideIndex = 0;
+            const slides = document.getElementsByClassName("slide");
+
+            function changeSlide(n) {
+              slideIndex += n;
+              if (slideIndex >= slides.length) slideIndex = 0;
+              if (slideIndex < 0) slideIndex = slides.length - 1;
+              for (let i = 0; i < slides.length; i++) {
+                slides[i].classList.remove("active");
+              }
+              slides[slideIndex].classList.add("active");
+            }
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
     
 </body>
 </html>
