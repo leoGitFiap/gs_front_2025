@@ -139,21 +139,30 @@
       <h2 class="section-heading mb-10">Nossa Solução</h2>
       <div class="flex flex-wrap justify-center items-center">
         <div class="w-full md:w-1/2 p-6">
-          <p class="text-lg leading-relaxed">O <strong>AlertaCheia</strong> é um sistema de monitoramento de alagamentos que utiliza sensores pluviométricos conectados via IoT para medir o volume de chuva em tempo real. A plataforma gera alertas automáticos em três níveis:</p>
+          <p class="text-lg leading-relaxed">O <strong>AlertaCheia</strong> é um sistema de monitoramento de alagamentos que utiliza sensores pluviométricos conectados via IoT para medir o volume de chuva, temperatura e umidade em tempo real. A plataforma gera alertas automáticos em três níveis:</p>
           <ul class="list-disc list-inside text-left mt-6 text-gray-700">
             <li><span class="text-green-500 font-semibold">Seguro (Verde)</span></li>
             <li><span class="text-yellow-500 font-semibold">Atenção (Amarelo)</span></li>
             <li><span class="text-red-500 font-semibold">Alerta (Vermelho)</span></li>
           </ul>
-          <p class="mt-6">Componentes técnicos incluem pluviômetros digitais, microcontroladores (ESP8266/ESP32), plataforma MQTT, banco de dados na nuvem (Firebase/AWS/Azure), e um dashboard web/mobile com notificações push, e-mails e WhatsApp.</p>
+          <p class="mt-6">Componentes técnicos incluem pluviômetros digitais, sensores de temperatura e umidade, microcontroladores (ESP8266/ESP32), plataforma MQTT, banco de dados na nuvem (Firebase/AWS/Azure), e um dashboard web/mobile com notificações push. O sistema pode ser aplicado em sistemas pluviais em beira de rio e esgotos, entendendo o padrão de aumento conforme a chuva aumenta e prevendo enchentes.</p>
+          <p class="text-lg leading-relaxed mt-6">Nosso processo de monitoramento e prevenção de inundações funciona de forma integrada:</p>
+          <ol class="list-decimal list-inside text-left mt-6 text-gray-700">
+            <li><span class="font-semibold">Sensores instalados no leito do rio:</span> Sensores medem continuamente a pressão da coluna d'água e identificam alterações no nível do rio que podem indicar risco de alagamento.</li>
+            <li><span class="font-semibold">Conexão com placas embarcadas:</span> Cada sensor está conectado a uma placa embarcada na margem do rio, equipada com memória e processador para armazenar e processar os dados coletados.</li>
+            <li><span class="font-semibold">Comunicação via rede sem fio:</span> As placas se comunicam usando tecnologias como LoRa, Bluetooth ou Zigbee, com alcance de 50 metros a 3 quilômetros, transmitindo os dados de forma eficiente.</li>
+            <li><span class="font-semibold">Câmeras registrando o leito do rio:</span> Câmeras capturam imagens do rio a cada 5 minutos, registrando visualmente o nível das águas para complementar os dados dos sensores.</li>
+            <li><span class="font-semibold">Estação-base centralizando informações:</span> Uma estação-base coleta as imagens das câmeras e os dados dos sensores sobre o nível da água, centralizando as informações para análise.</li>
+            <li><span class="font-semibold">Envio para a nuvem e geração de alertas:</span> Os dados são enviados via sinal de celular para uma nuvem, onde são processados. A partir disso, são geradas previsões e alertas enviados à Defesa Civil e à população, ajudando a prevenir inundações.</li>
+          </ol>
         </div>
         <div class="w-full md:w-1/2 p-6">
           <div class="slideshow">
             <div class="slide active">
-              <img src="./assets/solucao1.jpg" alt="Sensor in Flooded Area">
+              <img src="./assets/aparelho.jpg" alt="Sensor in Flooded Area">
             </div>
             <div class="slide">
-              <img src="./assets/solucao2.jpg" alt="Dashboard with Real-Time Alerts">
+              <img src="./assets/solucao.jpg" alt="Dashboard with Real-Time Alerts">
             </div>
             <button class="slideshow-btn prev" onclick="changeSlide(-1)">❮</button>
             <button class="slideshow-btn next" onclick="changeSlide(1)">❯</button>
